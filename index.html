@@ -35,12 +35,15 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-8">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                        <a role="button" class="btn btn-warning btn-sm" href="#resform">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -75,11 +78,11 @@
 
               <div class="media">
                     <div class="media-body">
-                      <h2>Weekend Grand Buffet  <span class="badge badge-danger">NEW</span></h2>
+                      <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                       <p class="hidden-xs-down"> Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person  </p>
                     </div>
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
-                         src="img/uthappizza.png" alt="Uthappizza">
+                         src="img/buffet.png" alt="buffet">
                 </div>
 
             </div>
@@ -107,18 +110,17 @@
         </div>
 
         <!-- card starts here-->
+        <a id="resform"></a>
         <div class="row row-content align-items-center">
-      <!--  <div class="col col-content align-items-center">
-        <div class="col-12 col sm2"></div> -->
-        <div class="col-12 col-sm-8 offset-sm-2"> <!-- needs to be aligned in centre - check -->
+        <div class="col-12 col-sm-8 offset-sm-2">
 
-          <div class="card">
+        <div class="card">
               <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
               <div class="card-block">
 
             <form>
               <div class="form-group row">
-                  <label for="numofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                  <label for="numofguests" class="col-md-3 col-form-label">Number of Guests</label>
                   <div class="col-1"><input type="radio" id="numofguests" name="numofguests" value="1"> 1</div>
                   <div class="col-1"><input type="radio" id="numofguests" name="numofguests" value="2"> 2</div>
                   <div class="col-1"><input type="radio" id="numofguests" name="numofguests" value="3"> 3</div>
@@ -127,25 +129,24 @@
                   <div class="col-1"><input type="radio" id="numofguests" name="numofguests" value="6"> 6</div>
             </div>
             <div class="form-group row">
-                  <label for="date" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                  <div class="col-10 col-sm-6 col-md-6">
+                  <label for="date" class="col-12 col-md-3 col-form-label">Date and Time</label>
+                  <div class="col-12 col-sm-6 col-md-4">
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-calendar fa-lg"></i></div>
                         <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-
-                  <div class="col-10 col-sm-6 col-md-6">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-5">
                     <div class="input-group">
                       <div class="input-group-addon">
                         <i class="fa fa-clock-o fa-lg"></i></div>
                       <input type="text" class="form-control" id="time" name="time" placeholder="Time">
                     </div>
                   </div>
-            </div>
-          </div>
-        </div>
+              </div>
                 <div class="form-group row">
-                    <div class="offset-md-2 col-md-10">
+                    <div class="offset-md-3 col-md-10">
                         <button type="submit" class="btn btn-primary">Reserve</button>
                     </div>
                 </div>
